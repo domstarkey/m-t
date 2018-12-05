@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "M€€T",
+  "description": "Makes Google Calendar show the price of your meeting based on an avg hourly rate of attendees",
+  "version": "1.0",
+  "author":"Dom Starkey",
+  "permissions": ["storage"],
+  "options_page": "options.html",
+  "content_scripts": [
+	{
+	  "matches": ["https://calendar.google.com/*"],
+	  "js": ["script.js"]
+	}
+  ]
+}
